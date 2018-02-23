@@ -1,6 +1,10 @@
+const Escola = require('./escola.model');
+
 class EscolaController {
 	find(req, res) {
-		return res.status(200).json({controller: 'Escola'});
+		Escola.find(function (err, escola) {
+			return res.status(200).json({controller: JSON.stringify(escola)});
+		})
 	}
 }
 

@@ -10,6 +10,9 @@ const routes		= require('./routes');
 
 const app			= express();
 
+mongoose.Promise = bluebird;
+mongoose.connect('mongodb://localhost/escholar');
+
 app.use(cors());
 app.use(helmet());
 app.use(bodyParser.urlencoded({extended: true}));
