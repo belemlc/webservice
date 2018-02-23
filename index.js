@@ -16,6 +16,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(morgan('tiny'));
 
-app.use('/apu/', routes);
+app.use('/api/', routes);
 
-app.list(8080);
+app.listen(8080);
