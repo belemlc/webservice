@@ -1,4 +1,4 @@
-const controller = require('./escola.controller');
+const controller = require('./user.controller');
 const Router = require('express').Router;
 const router = new Router();
 
